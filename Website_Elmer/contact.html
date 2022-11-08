@@ -1,0 +1,92 @@
+<!Doctype HTML>
+
+<html>
+
+<head>
+    <title> CSS style Sheet</title>
+    <link rel="stylesheet" type="text/css" href="CSS/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="grid-container">
+    <header class="header">
+        <nav class="navigation">
+            <div class="navigation-items"><a href="index.html">Home</a></div>
+            <div class="navigation-items"><a href="blog.html">Blog</a></div>
+            <div class="navigation-items"><a href="article.html">Article</a></div>
+            <div class="navigation-items"><a href="contact.html">Contact</a></div>
+        </nav>
+        <figure class="figure">
+            <img class="header-image" src="images/header_image.jpg" alt="header">
+        </figure>
+    </header>
+
+    <main class="main">
+        <h1>Neem contact op!</h1>
+
+        <form name="contact" method="POST" data-netlify="true">
+            <div>
+                <label>Naam:</label>
+                <input type="name" name="name" />
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" />
+            </div>
+            <div>
+                <label>Telefoonnummer:</label>
+                <input type="tel" name="tel" />
+            </div>
+            <hr />
+            <div>
+                <div class="checkmark-item">
+                    Favoriete schilderij:
+                </div>
+                <div class="checkmark">
+                    <div>
+                        <label>Schilderij 1</label>
+                        <input type="checkbox" name="Schilderij 1" />
+                    </div>
+                    <div>
+                        <label>Schilderij 2</label>
+                        <input type="checkbox" name="Schilderij 2" />
+                    </div>
+                    <div>
+                        <label>Schilderij 3</label>
+                        <input type="checkbox" id="Spanish" name="Schilderij 3" />
+                    </div>
+                    <div>
+                        <label>Schilderij 4</label>
+                        <input type="checkbox" name="Schilderij 4" />
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div>
+                <label>Opmerking:</label>
+                <textarea class="textarea" name="opmerking"></textarea>
+            </div>
+            <hr />
+            <div class="hover">
+                <input type="reset" name="reset" />
+            </div>
+            <div class="hover">
+                <input type="submit" name="submit" />
+            </div>
+            <div class="button">
+                <input type="hidden" value="contact" name="contact" />
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <nav class="footer-navigation">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="blog.html">Blog</a></div>
+            <div><a href="article.html">Article</a></div>
+            <div><a href="contact.html">Contact</a></div>
+        </nav>
+    </footer>
+</body>
+
+</html>

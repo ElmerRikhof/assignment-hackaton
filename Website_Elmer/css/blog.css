@@ -1,0 +1,173 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+ }
+ 
+ h1, h2, h3 {
+    margin: 20px;
+    }
+ 
+ p {
+ margin: 20px;
+ }
+ 
+ a {
+ color: rgb(79, 77, 77);
+     margin-bottom: 20px;
+ 
+ }
+ 
+ .button {
+    margin: 10px;
+    padding: 0px;
+    background-color: rgb(189, 239, 189);
+    color: antiquewhite;
+ }
+ 
+ a:hover {
+ background-color: rgb(237, 194, 113);
+ 
+ }
+ 
+ .header { 
+ background-color: whitesmoke;
+ margin: 0px;
+ border-radius: 10%;
+     
+ }
+
+ .navigation {
+     display: flex;
+     flex-flow: row;
+     justify-content: center;
+     margin-bottom: none;
+     border: 0px solid rgb(99, 98, 98);
+     border-radius: 10%;
+ }
+ 
+ .navigation-items {
+ 
+     margin: 5px;
+     padding: 5px;
+     border-radius: 10%;
+ }
+ 
+ .header-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: -17px 0px 20px;
+    border: 1px solid grey;
+    border-radius: 10%;
+    }
+ 
+ .main {
+    margin: auto;
+ }
+
+ .main-grid {
+    margin: auto;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    grid-gap: 5px;
+ }
+
+ .main-grid-item {
+    border: 1px solid grey;
+    border-radius: 10%;
+    background-color: whitesmoke;
+ }
+ 
+ .aside { 
+     background-color: whitesmoke;
+     margin: 0px;
+     
+ }
+ 
+ .footer { 
+     background-color: grey;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin: 20px;
+ }
+ 
+ .footer-navigation {
+     margin: 20px 0px;
+ }
+ 
+ .grid-container {
+     height: 100vh;
+     display: grid;
+     grid-template: 1fr 1fr 1fr 1fr / 1fr;
+     grid-gap: 2px;
+ 
+ }
+ 
+ 
+ /* media queries */
+ 
+     @media (min-width: 768px) { 
+        
+         .header-image {
+             width: 100%;
+             height: 500px;
+             margin: -17px 0px 20px;
+             border: 1px solid grey;
+             border-radius: 10%;
+         }
+         .figure {
+             display: flex;
+             justify-content: center;
+         }
+         .main-grid {
+            margin: auto;
+            display: grid;
+            grid-template: 1fr 1fr 1fr / 1fr 1fr;
+            grid-gap: 5px;
+
+         }
+         .footer { 
+            background-color: rgb(186, 183, 183);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 20px 17%;
+        }
+     }
+     
+         
+     @media (min-width: 1024px) {
+         .header { 
+                 background-color: whitesmoke;
+                 margin: 0px 17%;
+                 border-radius: 10%;
+             }
+         .header-image {
+             width: 100%;
+             height: 500px;
+             margin: -17px 0px 20px;
+             border: 1px solid grey;
+             border-radius: 10%;
+         }
+         .figure {
+             display: flex;
+             justify-content: center;
+ 
+         }
+         .main-grid {
+            margin: auto;
+             display: grid;
+             grid-template: 1fr 1fr / 1fr 1fr 1fr;
+             grid-gap: 5px;
+          }
+          .footer { 
+              background-color: grey;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              margin: 20px 17%;
+          }
+     }
+ 
+ 
